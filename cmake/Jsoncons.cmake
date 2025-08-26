@@ -24,4 +24,12 @@ FetchContent_Declare(jsoncons
         URL_HASH SHA256=f22fb163df1a12c2f9ee5f95cad9fc37c6cfbefe0ae6f30aba7440832ef70fbe
         )
 
-FetchContent_MakeAvailable(jsoncons)
+FetchContent_GetProperties(jsoncons)
+if(NOT jsoncons_POPULATED)
+    FetchContent_Populate(jsoncons)
+
+    add_library(jsoncons INTERFACE)
+    target_include_directories(jsoncons SYSTEM INTERFACE
+        ${jsoncons_SOURCE_DIR}/include
+    )
+endif()
