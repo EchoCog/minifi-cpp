@@ -38,6 +38,7 @@ MiNiFi is a child project effort of Apache NiFi.  This repository is for a nativ
 - [Operations](#operations)
 - [Issue Tracking](#issue-tracking)
 - [Documentation](#documentation)
+- [Architecture](#architecture)
 - [Examples](#examples)
 - [License](#license)
 
@@ -573,6 +574,9 @@ See https://issues.apache.org/jira/projects/MINIFICPP/issues for the issue track
 
 ## Documentation
 See https://nifi.apache.org/minifi for the latest documentation.
+
+## Architecture
+For comprehensive technical architecture documentation including system design, component relationships, and data flow patterns, see [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ## Examples
 See our [examples page](examples/README.md) for flow examples.
