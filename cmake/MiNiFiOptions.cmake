@@ -117,6 +117,7 @@ add_minifi_option(ENABLE_COUCHBASE "Enable Couchbase support" OFF)
 add_minifi_option(ENABLE_EXECUTE_PROCESS "Enable ExecuteProcess processor" OFF)
 add_minifi_option(ENABLE_CONTROLLER "Enables the build of MiNiFi controller binary." ON)
 add_minifi_option(ENABLE_LLAMACPP "Enables llama.cpp support." OFF)
+add_minifi_option(ENABLE_COGNITIVE_CORE "Enables cognitive architecture and Deep Tree Echo integration." ON)
 
 set_minifi_cache_variable(CUSTOM_MALLOC OFF "Overwrite malloc implementation.")
 set_property(CACHE CUSTOM_MALLOC PROPERTY STRINGS "jemalloc" "mimalloc" "rpmalloc" OFF)
